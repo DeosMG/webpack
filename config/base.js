@@ -61,6 +61,10 @@ const baseConf = (_path) => {
            */
           test: /\.(png|jpg|jpeg|gif|svg)$/,
           loader: 'file-loader?name=assets/images/[name].[ext]'
+        },
+        {
+          test: /\.(eot|ttf|woff|woff2)$/,
+          loader: 'file-loader?name=assets/fonts/[name].[ext]'
         }
       ]
     },
